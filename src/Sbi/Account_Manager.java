@@ -73,7 +73,7 @@ public class Account_Manager {
                 if (resultSet.next()) {
                     double current_balance = resultSet.getDouble("balance");
                     if (amount<=current_balance){
-                        String debit_query = "UPDATE Accounts SET balance = balance - ? WHERE account_number = ?";
+                        String debit_query = "UPDATE Accounts SET balance = balance + ? WHERE account_number = ?";
                         PreparedStatement preparedStatement1 = connection.prepareStatement(debit_query);
                         preparedStatement1.setDouble(1, amount);
                         preparedStatement1.setLong(2, account_number);
