@@ -21,6 +21,7 @@ If not, right-click src → New → Package (e.g., bankingapp) and  move .java f
 4) Check for the main class (BankingApp.java)
 
 5) Build and Run:
+   
 Right-click BankingApp.java → Run As → Java Application.
 
 Use the console to interact with the app.
